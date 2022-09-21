@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
+/*Note:- Use Bootstrap defined classes for alignment, positioning, padding, margin to avoid content overflow.*/
+
+*{
+    font-family: 'Exo', sans-serif;
+}
+html,body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+nav{
+    font-size: 24px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: 40px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.navbar-brand{
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* font-size: 35px; */
+}
+
+.nav-link:hover{
+    background: rgba(255, 51, 85, 0.85);
+    color : white !important;
+}
+.navbar-nav{
+    margin:0 auto;
+}
+
+.jumbotron {
+    background: rgba(233, 236, 239, 0.6) !important;  /* This is for ie8 and below */
+    background: rgba(233, 236, 239, 0.6) !important; 
+ }
+.jumboHead{
+    border: 10px solid rgba(255, 51, 85, 0.85);
+    border-radius: 20px;
+}
+.jumboText{
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+}
+.jumboSmall{
+    font-size: 40px;
+    text-align: center;
+}
+.highlight{
+    color: rgba(255, 51, 85, 0.85);
+    font-weight: bold;
+}
+.denim{
+    display: none;
+}
+.shopBtn{
+    background: rgba(255, 51, 85, 0.85);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding:10px 30px;
+
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.shopBtn:hover{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background: rgba(255, 51, 85, 1);
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    margin:40px 0;
+}
+.innerContent{
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+}
+
+.teaser{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.teaserText{
+    font-size: 60px;
+}
+.teaserSmall{
+    font-size: 30px;
+}
+.teaserProd{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 40px;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0px 2px 24px -4px rgba(0,0,0,0.75);
+    transition: 0.5s;
+  }
+
+.card-img-top{
+    height: 236px;
+}
+
+/* Store */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/* Cart */
+
+.cartHead{
+    /* font-weight: bold; */
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px ;
+}
+.cartBottom{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px ;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.quantity{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    user-select: none;
+}
+
+.sign{
+    background: rgba(255, 51, 85, 0.85);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* margin-right:10px; */
+}
+.sign:nth-child(1){
+    margin-right: 10px;
+}
+.sign:nth-child(2){
+    margin-left: 10px ;
+}
+.subTotal,.delivery,.total{
+    display:flex;
+    justify-content: space-evenly;
+}
+.amount{
+    font-weight: bold;
+}
+.social{
+    width: 70%;
+}
+.checkoutBtn{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+.btn-info{
+   margin-top: 30px;
+   margin-bottom: 30px;
+    background-color: rgba(255, 51, 85, 0.85) !important;
+    border-color: rgba(255, 51, 85, 0.85) !important;
+}
+.btn-info:hover{
+    background-color: rgba(255, 51, 85, 1) !important;
+}
+.all {
+    gap: 150px;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+}
+.foot {
+    background-color: black;
+    color: white;
+}
+.none {
+    display: none;
+}
+
+
+
+#containerFooter
+{
+    width: 100%;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 300px;
+    box-sizing: border-box;
+}
+#containerFooter h3:hover, #containerFooter p:hover
+{
+    color: lightslategray;
+    cursor: pointer;
+}
+#webFooter
+{
+    padding-top: 30px;
+    font-size: 12px;
+}
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1350px)
+{
+    #containerFooter
+    {
+        padding: 15px 200px;
+    }
+}
+@media(max-width: 1166px)
+{
+    #containerFooter
+    {
+        padding: 15px 100px;
+    }
+}
+@media(max-width: 950px)
+{
+    #containerFooter
+    {
+        padding: 15px 50px;
+    }
+}
+@media(max-width: 850px)
+{
+    #containerFooter
+    {
+        font-size: 13px;
+    }
+    #webFooter
+    {
+        font-size: 10px;
+    }
+}
+@media(max-width: 750px)
+{
+    #containerFooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 100px;
+    }
+    #webFooter
+    {
+        padding: 15px 20px;
+    }
+}
+@media(max-width: 540px)
+{
+    #containerFooter
+    {
+        padding: 0 25px;
+    }
+}
+
+
+/* Responsive queries */
+@media(max-width:900px){
+    .denim{
+        display: block;
+    }
+    .model{
+        display: none;
+    }
+    .none {
+        display: block;
+    }
+    .non {
+        display: none;
+    }
+}
+
+@media(max-width:888px){
+    .jumboText{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .jumboSmall{
+        font-size: 20px;
+    }
+    .none {
+        display: block;
+    }
+    .non {
+        display: none;
+    }
+}
+@media(max-width:655px){
+    .jumboText{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .jumboSmall{
+        font-size: 20px;
+    }
+    .none {
+        display: block;
+    }
+    .non {
+        display: none;
+    }
+}
+@media(max-width:576px){
+   .denim{
+       width: 350px;
+   }
+   .none {
+    display: block;
+}
+.non {
+    display: none;
+}
+}
